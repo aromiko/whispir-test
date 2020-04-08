@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.color-picker {
+  max-height: 20rem;
+  padding: 2rem;
+}
