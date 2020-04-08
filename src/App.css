@@ -11,5 +11,6 @@
 
 .color-picker {
   max-height: 25rem;
+  width: 15rem;
   padding: 2rem;
 }
