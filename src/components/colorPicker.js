@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 
 import { SketchPicker } from "react-color";
 
@@ -14,7 +14,7 @@ const ColorPicker = (props) => {
   };
 
   return (
-    <Fragment>
+    <div>
       <button onClick={toggleColorPicker}>
         {isDisplayed ? "Hide Color Picker" : "Pick Color"}
       </button>
@@ -25,7 +25,7 @@ const ColorPicker = (props) => {
       ) : (
         ""
       )}
-    </Fragment>
+    </div>
   );
 };
 

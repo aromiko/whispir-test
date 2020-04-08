@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 
 import moment from "moment-timezone";
 
@@ -19,8 +19,8 @@ const DateTimePicker = () => {
 
   const dateTime = moment(new Date());
   return (
-    <Fragment>
-      <div className="content">
+    <div className="content">
+      <div>
         {timezones ? (
           <select onChange={changeTimezone}>
             {timezones.map(({ name, timezone }, index) => {
@@ -35,12 +35,12 @@ const DateTimePicker = () => {
           <div>Timezone not found!</div>
         )}
       </div>
-      <div className="content">
+      <div>
         <h2>
           {dateTime.tz(selectedTimezone).format("dddd, MMMM D, YYYY, hh:mm A")}
         </h2>
       </div>
-    </Fragment>
+    </div>
   );
 };
 
